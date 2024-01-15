@@ -11,7 +11,7 @@ import { LiveBadge } from "@/components/live-badge";
 
 interface UserItemProps {
   username: string;
-  isLive: boolean;
+  isLive?: boolean;
   imageUrl: string;
 }
 
