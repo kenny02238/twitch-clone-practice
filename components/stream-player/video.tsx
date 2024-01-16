@@ -24,6 +24,7 @@ export const Video = ({ hostName, hostIdentity }: VideoProps) => {
   ]).filter((track) => {
     return track.participant.identity === hostIdentity;
   });
+
   let content;
   if (!participant && connectionState === ConnectionState.Connected) {
     content = <OfflineVideo username={hostName} />;
