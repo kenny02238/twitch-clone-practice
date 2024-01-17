@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Twitch Clone Practice
 
-## Getting Started
+## [Demo Website](https://twitch-clone-practice.vercel.app/)
 
-First, run the development server:
+![App Screenshot](twitch_clone.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+這是一個使用 [Next14](https://nextjs.org/) 構建的 Twitch Clone 練習專案。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 技術特點
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+專案：
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Developing with Next.js 14, design communication between ServerComponent and ClientComponent.
 
-## Learn More
+- Next.js 14 Server Action function runs on the server.
 
-To learn more about Next.js, take a look at the following resources:
+- Utilize Svix for handling Webhooks-related functionalities.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Leverage various useful hooks provided by the usehooks-ts library.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Using Ngrok for testing during development
 
-## Deploy on Vercel
+- Utilize tanstack/react-table and shadcn-ui to handle tables concurrently.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+UI：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Utilize Shadcn-ui for handling the appearance and UI aspects.
+
+- Utilize various icons provided by lucide-react.
+
+- Utilize clsx for optimizing the Tailwind layout.
+
+- Sonner handles the display of success and failure toasts.
+
+State management：
+
+- Implementing state management using Zustand.
+
+Database：
+
+- Utilize PlanetScale service to establish a MySQL database.
+
+- Utilize the Prisma ORM to communicate with the database.
+
+User：
+
+- Utilize Clerk services to manage user account functionalities.
+
+Live streaming：
+
+- Utilize Livekit services to handle live streaming and chat room functionalities.
+
+<br>
+
+## 功能特點
+
+Account system:
+
+- Offers Google login for members and visitors
+
+- Channel recommendations
+- Blacklist and following channels
+
+Live streaming features:
+
+- Implements Twitch-specific live streaming functions, such as real-time chat, watching live broadcasts, etc.
